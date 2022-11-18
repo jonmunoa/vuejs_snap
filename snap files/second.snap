@@ -23,6 +23,38 @@ confinement: devmode
 apps:
   hello:
     command: bin/hello
+	
+	
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+name: hello
+base: core18
+version: '2.10'
+summary: GNU Hello, the "hello world" snap
+description: |
+  GNU hello prints a friendly greeting.
+grade: devel
+confinement: devmode
+
+apps:
+  hello:
+  
+  
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+name: hello
+base: core18
+version: '2.10'
+summary: GNU Hello, the "hello world" snap
+description: |
+  GNU hello prints a friendly greeting.
+grade: devel
+confinement: devmode
+
+apps:
+  hello:
 
 parts:
   gnu-hello:
