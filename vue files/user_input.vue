@@ -2,24 +2,6 @@
 This example demonstrates handling user input with the v-on directive.
 -->
 
-<script>
-export default {
-  data() {
-    return {
-      message: 'Hello World!'
-    }
-  },
-  methods: {
-    reverseMessage() {
-      this.message = this.message.split('').reverse().join('')
-    },
-    notify() {
-      alert('navigation was prevented.')
-    }
-  }
-}
-</script>
-
 <template>
   <!--
     Note we don't need .value inside templates because
